@@ -17,7 +17,6 @@ class App extends React.Component {
   createEvent = (data) => {
     console.log('POST');
     fetch('http://localhost:3000/',  {    //http://cw-events.herokuapp.com/events
-      mode: 'no-cors',
       method: 'POST',
       headers: {
         // 'Access-Control-Allow-Origin':'*',
@@ -33,7 +32,8 @@ class App extends React.Component {
   }
 
   fetchEvents() {
-    fetch('http://localhost:3000/')      ////cw-events.herokuapp.com/events
+    let details = {method: 'GET'};                //is this needed?
+    fetch('http://localhost:3000/', details)      ////cw-events.herokuapp.com/events
     .then(response =>response.json())
     .then(result => result.sort((a,b) => {
       if (Date.parse(a.date) > Date.parse(b.date)) return 1;
