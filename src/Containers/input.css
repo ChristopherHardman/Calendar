@@ -1,0 +1,46 @@
+.holder {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.InputTitle {
+  font-size: 1.7em;
+  color: grey;
+}
+
+input {
+  width: 50%;
+  margin: 5px;
+  border-bottom: 2px solid grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+label {
+  font-size: 1em;
+  margin: 5px;
+}
+
+button {
+  width: 30%;
+  color: orange;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: white;
+}

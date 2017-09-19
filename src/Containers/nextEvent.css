@@ -1,0 +1,28 @@
+.NextEventContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.NextEventTitle {
+  color: grey;
+  width: 80%;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.EventTitle {
+  font-size: 1.7em;
+  color: grey;
+}
+
+img {
+  height: 15px;
+  width: 15px;
+}
+
+
+.NewDate {
+font-size: 1.2em;
+}
